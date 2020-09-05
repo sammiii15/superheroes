@@ -1,10 +1,11 @@
 <template>
-  <v-app  style="background: rgba(0,0,0,0);">
+  <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="dark"
       dark
     >
+      <h1> Tus superheroes favoritos </h1>
     </v-app-bar>
 
     <v-main>
@@ -20,7 +21,7 @@ export default {
   name: 'App',
 
   components: {
-    superheroes
+    superheroes,
   },
 
   data: () => ({
