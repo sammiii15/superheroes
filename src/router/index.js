@@ -11,9 +11,13 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/superheroes',
+    path: '/superheroes/:id/',
     name: 'superhero',
-    component: () => import(/* webpackChunkName: "about" */ '../views/superhero.vue')
+    component: () => import('@/components/superheroe.vue')
+  },
+  
+  {
+    path: '*', redirect: '/', hidden: true
   }
 ]
 
