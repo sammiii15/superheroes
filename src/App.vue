@@ -16,12 +16,14 @@
 
 <script>
 import superheroes from './components/superheroes';
+import superhero from './components/superhero.vue';
 
 export default {
   name: 'App',
 
   components: {
     superheroes,
+    superhero
   },
 
   data: () => ({

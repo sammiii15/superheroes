@@ -7,15 +7,16 @@ Vue.use(VueRouter)
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'home',
+    component: Home,
+    redirect: '/home',
   },
   {
-    path: '/superheroes/:id/',
+    path: '/superhero/:id',
     name: 'superhero',
-    component: () => import('@/components/superheroe.vue')
+    component: () => import('@/components/superhero.vue'),
+    props: true
   },
-  
   {
     path: '*', redirect: '/', hidden: true
   }
